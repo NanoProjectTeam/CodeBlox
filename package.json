@@ -1,0 +1,41 @@
+{
+  "name": "codeblox",
+  "version": "1.0.0",
+  "description": "Bridge between Node.js CLI and Roblox Studio via local API server",
+  "main": "server.js",
+  "bin": {
+    "codeblox": "./cli.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node cli.js",
+    "dev": "concurrently \"node server.js\" \"node cli.js\""
+  },
+  "keywords": [
+    "roblox",
+    "cli",
+    "studio",
+    "codeblox",
+    "roblox-studio",
+    "luau",
+    "api-bridge"
+  ],
+  "author": "gitlawb",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NanoProjectTeam/CodeBlox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NanoProjectTeam/CodeBlox/issues"
+  },
+  "homepage": "https://github.com/NanoProjectTeam/CodeBlox#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
